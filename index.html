@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO WPP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #555;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #667eea;
+        }
+
+        /* Estilos para la tarjeta especial de Hornitos con dos botones */
+        .card-special {
+            cursor: default;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #333;
+        }
+        
+        .card-special:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-special h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .card-special p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            flex: 1;
+            text-align: center;
+            background: #764ba2;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            min-width: 140px;
+        }
+        
+        .btn-primary:hover {
+            background: #5a3d7c;
+        }
+        
+        .btn-secondary {
+            flex: 1;
+            text-align: center;
+            background: #667eea;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            min-width: 140px;
+        }
+        
+        .btn-secondary:hover {
+            background: #4f66c7;
+        }
+        
+        .note {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #888;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> RETO WPP </h1>
+        <p class="subtitle">Hola Camilo, aquí están los 4 banners que desarrollé para la prueba técnica. Haz click en cada tarjeta para ver el resultado.</p>
+        
+        <div class="grid">
+           
+            <div class="card-special">
+                <h2>🍹 Proyecto Hornitos</h2>
+                <p>Banner interactivo y proyecto completo para la marca Hornitos. Incluye animaciones y efectos visuales.</p>
+                <div>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">Animaciones</span>
+                </div>
+                
+               
+                <div class="button-group">
+                    <a href="./interactive-banner-test/hornitos-banner/public/banner-vertical.html" 
+                       class="btn-primary" 
+                       target="_blank">
+                       🎨 Ver Banner Vertical
+                    </a>
+                    <a href="./interactive-banner-test/hornitos-banner/public/index.html" 
+                       class="btn-secondary" 
+                       target="_blank">
+                       📁 Ver Proyecto General
+                    </a>
+                </div>
+                <p class="note">⚡ El banner es interactivo y el proyecto incluye el servidor y configuración completa</p>
+            </div>
+            
+            <!-- BANNER FACEBOOK -->
+            <a href="./interactive-banner-test/facebook-video/index.html" class="card" target="_blank">
+                <h2>📱 Banner Facebook Video</h2>
+                <p>Adaptación de video post estilo Facebook a formato publicitario HTML5.</p>
+                <div>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <span class="btn">Ver Banner →</span>
+            </a>
+     
+            <!-- BANNER INSTAGRAM CAROUSEL -->
+            <a href="./interactive-banner-test/instagram-carousel/index.html" class="card" target="_blank">
+                <h2>✨ Banner Instagram Carousel</h2>
+                <p>Adaptación de post estilo Instagram a formato publicitario HTML5 interactivo.</p>
+                <div>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <span class="btn">Ver Banner →</span>
+            </a>
+            
+            <!-- BANNER WEATHER -->
+            <a href="./interactive-banner-test/weather-banner/index.html" class="card" target="_blank">
+                <h2>🚀 Weather Banner</h2>
+                <p>Set de banners HTML5 dinámicos con información del clima.</p>
+                <div>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">API</span>
+                </div>
+                <span class="btn">Ver Banner →</span>
+            </a>
+        </div>
+        
+        <footer>
+            <p>© Leidy Michell Navarrete Vargas - Prueba Técnica WPP</p>
+        </footer>
+    </div>
+</body>
+</html>
