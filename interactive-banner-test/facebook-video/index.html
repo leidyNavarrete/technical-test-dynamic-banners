@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Video Banner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- DEV BUTTON -->
+<button id="devToggle">DEV</button>
+
+<!-- DEV PANEL -->
+<div id="devPanel">
+  <h4>📊 MÉTRICAS</h4>
+  <p>Play: <span id="mPlay">0</span></p>
+  <p>Pause: <span id="mPause">0</span></p>
+  <p>Mute: <span id="mMute">0</span></p>
+  <p>Unmute: <span id="mUnmute">0</span></p>
+  <p>Total: <span id="mTotal">0</span></p>
+  <button id="resetMetrics">Reset</button>
+</div>
+
+<div id="banner">
+
+  <video id="adVideo" playsinline>
+    <source src="nike-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="controls">
+    <button id="playPauseBtn">Play</button>
+    <button id="muteBtn">Mute</button>
+  </div>
+
+  <div class="content">
+    <h2>JUST DO IT</h2>
+    <p>Descubre la nueva colección Nike 2026</p>
+  </div>
+
+  <button id="cta">Comprar ahora</button>
+
+  <!-- CLICK LAYER -->
+  <a href="https://www.nike.com/co/" target="_blank" id="clickLayer"></a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

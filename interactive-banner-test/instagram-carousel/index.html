@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Carousel Banner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="size-300-600">
+
+<button id="devToggle">DEV</button>
+
+<div id="devPanel">
+  <h4>📊 MÉTRICAS</h4>
+  <p>⬅️ Izquierda: <span id="mLeft">0</span></p>
+  <p>➡️ Derecha: <span id="mRight">0</span></p>
+  <hr>
+  <p>P1 Clics: <span id="mS1">0</span></p>
+  <p>P2 Clics: <span id="mS2">0</span></p>
+  <p>P3 Clics: <span id="mS3">0</span></p>
+  <button id="resetMetrics">Reset</button>
+</div>
+
+<div id="banner">
+  <div class="brand-header">
+    <div class="brand-logo">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm11 3h-6v-2h6v2zm0-4h-6v-2h6v2z" fill="#000"/></svg>
+    </div>
+    <div class="brand-name">
+      <strong>Nike</strong>
+      <span class="verified-badge">●</span>
+    </div>
+    <div class="more-options">•••</div>
+  </div>
+
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide" data-id="1" data-url="https://www.nike.com.co/air-jordan-4-retro-og-fc-im4002-100-tp6/p">
+        <div class="img-container"><img src="images/AIR-JORDAN.webp" alt="Jordan"></div>
+        <div class="info">
+          <h3>Air Jordan 4 Retro</h3>
+          <p>El clásico que nunca muere</p>
+        </div>
+      </div>
+      <div class="slide" data-id="2" data-url="https://www.nike.com/t/air-max-270-womens-shoes-Pgb94t/HJ3222-401">
+        <div class="img-container"><img src="images/AIR-MAX.webp" alt="Air Max"></div>
+        <div class="info">
+          <h3>Air Max 270</h3>
+          <p>Comodidad en cada paso</p>
+        </div>
+      </div>
+      <div class="slide" data-id="3" data-url="https://www.nike.com.co/nike-free-metcon-6-se-hv2017-001-th5/p">
+        <div class="img-container"><img src="images/FREE-METCON.webp" alt="Metcon"></div>
+        <div class="info">
+          <h3>Free Metcon 6</h3>
+          <p>Potencia para tu entrenamiento</p>
+        </div>
+      </div>
+    </div>
+
+    <button id="prev" class="btn-nav">‹</button>
+    <button id="next" class="btn-nav">›</button>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
