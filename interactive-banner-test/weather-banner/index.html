@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adidas Weather</title>
-   <base href="/interactive-banner-test/weather-banner/">
+
+  <base href="/interactive-banner-test/weather-banner/">
+  
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https:;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.openweathermap.org https://fonts.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self' https://api.openweathermap.org;
+    img-src 'self' data: https:;
+  ">
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="banner banner-300x600 respirando">
-    <!-- Branding -->
+
     <div class="brand">
       <div class="logo">
         <svg viewBox="0 0 100 50" width="60" height="30">
@@ -21,7 +31,6 @@
       <span class="brand-slogan">ADIDAS</span>
     </div>
     
-    <!-- Clima -->
     <div class="weather-container">
       <div class="city-info">
         <span class="city-icon">📍</span>
@@ -32,16 +41,13 @@
         <span class="weather-icon">☀️</span>
       </div>
     </div>
-    
-    <!-- FRASE CREATIVA (dinámica) -->
+
     <div class="creative-message">
       ☀️ EL SOL NO ESPERA. ¿TÚ SÍ?
     </div>
-    
-    <!-- CTA ÚNICO con link dinámico -->
+   
     <a href="https://www.adidas.co" class="cta-button" target="_blank">DESCUBRE LA COLECCIÓN</a>
     
-    <!-- Partículas -->
     <div class="particles-container"></div>
   </div>
   
